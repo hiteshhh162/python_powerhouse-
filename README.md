@@ -1,2 +1,5 @@
 # python_powerhouse-
-hear describe various concept of python in this declare evrythings and hear also declare to question deefinition in this every question above 
+All python concept describe hear 
+1->variable, data types,comments ( file name : class 1 and class 2)
+2->condions [if else , elif ladder ]( file name : condition.py)
+3->operator [arithmetic operator  , logical operator ,comparison operator, assignment operator](file name : operator.py) 
