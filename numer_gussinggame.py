@@ -1,7 +1,13 @@
 import random 
 num = random.randint(1,100)
 tries = 0
-guessed = int (input("guess the number  between 1 to 100"))
-
-if guessed == num:
-    print("Congratulation  you found your number ")
+while True:
+    guessed = int (input("guess the number  between 1 to 100 :"))
+    tries +=1
+    if guessed == num:
+        print(f"Congratulation  you found your number in {tries} tries\n")
+        break 
+    elif  guessed > num :
+        print("sorry you need to go lower \n")
+    elif guessed < num :
+        print("sorry you need to go a little upper \n")    

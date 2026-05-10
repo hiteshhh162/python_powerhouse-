@@ -207,27 +207,42 @@
 #Q4 Automorphic number 
 # A number is automorphic number if its square ends with the number itself (e.g 5**2 =25 , 76**2 = 5776)
 
-num = int(input("Enter a number to check its automorphic and not :"))
-copy =num
-copy1=num 
+# num = int(input("Enter a number to check its automorphic and not :"))
+# copy =num
+# copy1=num 
 
-copy = copy *copy
-r=0
-rev=0
-while num > 0:
-    r=copy%10
-    rev = (rev * 10) + r
-    num//=10
-    copy//=10
+# copy = copy *copy
+# r=0
+# rev=0
+# while num > 0:
+#     r=copy%10
+#     rev = (rev * 10) + r
+#     num//=10
+#     copy//=10
 
-rev1=0
-while rev > 0:
-    r=rev%10
-    rev1 =(rev1*10 )+r
-    rev //=10    
-print (rev1)
-print(copy1)
-if copy1 == rev1:
-    print("Its Automorphic number ")
-else:
-    print("its not a Automorphic number ")      
+# rev1=0
+# while rev > 0:
+#     r=rev%10
+#     rev1 =(rev1*10 )+r
+#     rev //=10    
+# print (rev1)
+# print(copy1)
+# if copy1 == rev1:
+#     print("Its Automorphic number ")
+# else:
+#     print("its not a Automorphic number ")      
+
+
+#Enter  two string and Check it is anagram or not 
+
+str1=input ("Enter frist strig :")
+str2=input("enter second string :") 
+count=0
+for i in range(len(str1)+1):
+    if str1[i] not in str2:
+        count+=1
+
+if count==0:
+    print("this is anagram ")
+else :
+    print("this is not anagram ")    
