@@ -12,12 +12,43 @@
 
 #Q2 find the largest  element in the list along with its position (index)
 
-l = [ 10,20,30,40,40]
-max =0
-ind=0
-for i in range(len(l)):
-    if max < l[i]:
-        ind = i
-        max= l[i]
+# l = [ 10,20,30,40,40]
+# max =0
+# ind=0
+# for i in range(len(l)):
+#     if max < l[i]:
+#         ind = i
+#         max= l[i]
 
-print(f"Their index position is :{ind} nad maximum value is :{max} ")        
+# print(f"Their index position is :{ind} nad maximum value is :{max} ")        
+
+
+#Q3 identify the second largest element in the list withoutsorting directly 
+
+
+# l = [ 10,20,30,40,40]
+# max =0
+# second=0
+# ind=0
+# for i in range(len(l)):
+#     if max < l[i]:
+#         ind = i
+#         second=max
+#         max= l[i]
+
+
+# print(f"Second largest number is :{second}")
+
+
+#Q4 verify whether the list element are in ascending order 
+
+l = [1,2,3,4,5]
+
+check = 0
+
+for i in range (len (l)):
+    if l[i] > l[i+1]:
+        print("Your list is not sorted in ascending order ")
+        break
+else :
+    print("Your list is sorted in ascending order ")    

@@ -164,11 +164,11 @@
 #     r=(r*10)+n
 #     num1//=10
 # print("reverse number :",r)    
-str = input()
+# str = input()
 
-length =int(len(str))
-if length % 2==0:
-    length=int(length-1)
-length/=2
+# length =int(len(str))
+# if length % 2==0:
+#     length=int(length-1)
+# length/=2
 
-print(str[int(length)])
+# print(str[int(length)])
