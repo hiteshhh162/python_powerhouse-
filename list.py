@@ -42,13 +42,50 @@
 
 #Q4 verify whether the list element are in ascending order 
 
-l = [1,2,3,4,5]
+# l = [1,2,9,4,5]
 
-check = 0
+# check = 0
 
-for i in range (len (l)):
-    if l[i] > l[i+1]:
-        print("Your list is not sorted in ascending order ")
-        break
-else :
-    print("Your list is sorted in ascending order ")    
+# for i in range (len (l)-1):
+#     if l[i] > l[i+1]:
+#         print("Your list is not sorted in ascending order ")
+#         break
+# else :
+#     print("Your list is sorted in ascending order ")    
+
+
+#Q5 Shift all element one position tothe lest  , with the first element moving to the end 
+
+# l=[1,2,3,4,5,6,7,8,9,0]
+# temp=l[0]
+# for i in range(len(l)-1):
+#     l[i]=l[i+1]
+# l[i+1]=temp
+
+# print(l)
+
+
+#Q6 generalize the previous problem rotete the list k times to the left
+
+# l=[1,2,3,4,5,6,7,8,9,0]
+# temp=l[0]
+# k = int(input("Enter k for you want to move element :"))
+# while k >0:
+#     for i in range(len(l)-1):
+#         l[i],l[i+1]=l[i+1],l[i]
+#     k-=1
+
+# print(l)
+
+
+#Q7 reverse the entire list without using extra space (i.e.,swap element )
+
+
+l=[1,2,3,4,5,6,7,8,9,0]
+b = len(l)-1
+for i in range(len(l)//2):
+        l[i],l[b]=l[b],l[i]
+        b-=1
+print(l)
+
+
