@@ -131,17 +131,34 @@
 # 
 # 
 # Detect and print element that appear more than once in the array 
-nums = [1,1,2,3,4,2,23,3,425,34,645,6456,2,52,534,5,6]
-d={}
+# nums = [1,1,2,3,4,2,23,3,425,34,645,6456,2,52,534,5,6]
+# d={}
 
-for i in nums:
+# for i in nums:
+#     if i in d.keys():
+#         d[i]+=1
+
+#     else:
+#         d[i]=1
+
+# for i in d:
+#     if d[i] > 1:
+#         print(f"{i}  {d[i]}")
+
+
+# find the even number with the highest frequency return smallest one if there is a tie smallest one , if there is no such element return -1
+num = [ 1,2,3,4,5,6,7,78,9,0,2,3,3,3]
+d={}
+for i in num:
     if i in d.keys():
         d[i]+=1
 
     else:
         d[i]=1
 
+max = -1
 for i in d:
-    if d[i] > 1:
-        print(f"{i}  {d[i]}")
-        
+    if i%2==0:
+        if max <= d[i]:
+            max=d[i]
+print(max)            
