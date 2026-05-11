@@ -1,10 +1,13 @@
-l = [1,2,3,4,5]
 
-check = 0
+name = ["hitesh" ,"aakash","vipul"]
+height = [180,160,162]
+d={}
+for i in range(len(name)):
+    d[height[i]]=name[i]
 
-for i in range (len (l)-1):
-    if l[i] > l[i+1]:
-        print("Your list is not sorted in ascending order ")
-        break
-else :
-    print("Your list is sorted in ascending order ")    
+d=sorted (d.items() , key=lambda x:x[0] , reverse = True)
+
+for i in range (len(d)):
+    names[i] = d[i][1]
+
+print(names)    
